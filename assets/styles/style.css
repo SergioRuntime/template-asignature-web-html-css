@@ -1,0 +1,252 @@
+/* FIRST ZONE */
+
+.exam-form {
+    width: 770px;
+    height: 100%;
+    margin: 16px 0;
+}
+
+.exam-form-title {
+    width: 100%;
+    height: 193px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    border-left-color: rgb(218, 220, 224);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgb(218, 220, 224);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-style: solid;
+    border-bottom-color: rgb(218, 220, 224);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-top: 8px solid rgb(134, 62, 4);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.exam-form-title h1 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+#form1 {
+    margin-top: 16px;
+}
+
+.exam-form-personal-data {
+    height: 138px;
+}
+
+.exam-form-personal-data fieldset {
+    border-left: none;
+    border-top: 1px solid black;
+    border-bottom: none;
+    border-right: none;
+}
+
+.exam-form-personal-data legend {
+    padding-right: 4px;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: 0.1px;
+}
+
+.exam-form-personal-data__name {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+    border-left: 8px solid rgb(66, 133, 244);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: rgb(255, 255, 255);
+}
+
+.exam-form-personal-data__labelcontent {
+    margin: 24px 24px 0 24px;
+}
+
+.exam-form-personal-data__content label {
+    font-size: 24px;
+    font-weight: 400;
+    cursor: text;
+    color: #333;
+    height: 24px;
+    letter-spacing: 0.1px;
+    margin: 0;
+}
+
+.exam-form-personal-data__inputcontent {
+    margin: 24px;
+    width: 360px;
+}
+
+.exam-form-personal-data__inputcontent input {
+    font-size: 14px;
+    height: 20px;
+    padding-bottom: 2px;
+    width: 100%;
+    appearance: none;
+    background-color: transparent;
+    padding-right: 18px;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+    border: 1px dotted black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* SECOND ZONE */
+
+/* Questions type test */
+
+.exam-form-question {
+    margin-top: 14px;
+}
+
+.exam-form-question-test {
+    width: 768px;
+    height: 100%;
+    margin-top: 14px;
+    border-left: 8px solid rgb(66, 133, 244);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: rgb(255, 255, 255);
+    padding: 27px 0 12px 0;
+}
+
+.exam-form-question-test span {
+    font-weight: 400;
+    margin-left: 24px;
+    font-size: 16px;
+}
+
+.exam-form-question fieldset {
+    border-left: none;
+    border-top: 1px solid black;
+    border-bottom: none;
+    border-right: none;
+    margin-top: 4px;
+}
+
+.exam-form-question legend {
+    padding-right: 4px;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: 0.1px;
+    margin-bottom: 4px;
+}
+
+.exam-form-question-test__options {
+    margin: 9px 0;
+}
+
+.exam-form-question-test__radio {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.exam-form-question-test__radio label {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.exam-form-question-test__radio input {
+    height: 48px;
+    margin-right: 8px;
+}
+
+/* End questions type test */
+
+/* Questions type multiple */
+
+.exam-form-question-multiple__content {
+    margin-top: 14px;
+    border-left: 8px solid rgb(66, 133, 244);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: rgb(255, 255, 255);
+    padding: 27px 0 12px 0;
+}
+
+.exam-form-question-multiple__content span {
+    font-weight: 400;
+    margin-left: 24px;
+    font-size: 16px;
+}
+
+.exam-form-question-multiple__options {
+    margin: 9px 0;
+}
+
+.exam-form-question-multiple__checkbox {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.exam-form-question-multiple__checkbox label {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.exam-form-question-multiple__checkbox input {
+    height: 48px;
+    margin-right: 8px;
+}
+
+/* End questions multiple */
+
+.exam-form-button {
+    height: 45px;
+    margin: 36px 0;
+    display: flex;
+    padding-left: 8px;
+}
+
+.exam-form-button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    margin: 0;
+}
+
+.exam-form-button__send {
+    cursor: pointer;
+    border: none;
+    color: #333;
+    width: 1086px;
+    margin-right: 160px;
+    text-shadow: 1px 1px #fff;
+    background: #fff;
+}
+
+.exam-form-button__send:hover {
+    color: #333;
+    transform: translateY(-4px);
+    background: #fff;
+}

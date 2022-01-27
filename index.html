@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/global.css" />
+    <title>Exam</title>
+  </head>
+  <body>
+    <!--*** Inicio template ***-->
+    <div class="exam-form">
+      <!--*** Encabezado ***-->
+      <div class="exam-form-title">
+        <!--*** Podrás cambiar el titulo dependiendo de la asignatura. ***-->
+        <h1>Literatura</h1>
+      </div>
+      <!--*** Fin encabezado ***-->
+      <!--*** Cambiar el "path.htm", es esencial, para que puedas enviar el formulario a la ruta destino. ***-->
+      <form action="path.html" method="post" id="form1">
+        <div class="exam-form-container">
+          <!--*** Zona nombre ***-->
+          <!--*** En esta zona el contenido es fijo, mantenerlo sin modificar. ***-->
+          <div class="exam-form-personal-data">
+            <fieldset>
+              <legend>Datos del alumno</legend>
+              <div class="exam-form-personal-data__name">
+                <div class="exam-form-personal-data__labelcontent">
+                  <label for="name">Nombre</label>
+                </div>
+                <div class="exam-form-personal-data__inputcontent">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Sergio"
+                  />
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <!--*** Fin zona nombre ***-->
+
+          <!--*** Zona pregunta ***-->
+          <!--*** En esta zona podrás añadir todas las preguntas de tipo test o de tipo múltiple. ***-->
+          <div class="exam-form-question">
+            <fieldset>
+              <legend>Preguntas de examenes</legend>
+              <!--*** Pregunta de tipo test ***-->
+              <div class="exam-form-question-test">
+                <!--*** Modificar el texto siguiente para cambiar la pregunta. ***-->
+                <span>1. ¿Qué es un prefijo?</span>
+                <!--*** Modificar las opciones dependiendo de la pregunta. ***-->
+                <div class="exam-form-question-test__options">
+                  <!--*** Hay que tener en cuenta en las opciones cambiar: ***-->
+                  <!--*** name: todas las opciones tienen que tener el mismo name de la pregunta ***-->
+                  <!--*** value: valor de la opcion de la pregunta ***-->
+                  <!--*** id: único por opcion y linkearlo con el atributo for del label ***-->
+                  <div class="exam-form-question-test__radio">
+                    <input
+                      type="radio"
+                      name="question1"
+                      value="1"
+                      id="radio1"
+                    />
+                    <label for="radio1">
+                      Palabras que se anteponen a un grupo de letras y hacen
+                      cambiar el su significado</label
+                    >
+                  </div>
+                  <div class="exam-form-question-test__radio">
+                    <input
+                      type="radio"
+                      name="question1"
+                      value="2"
+                      id="radio2"
+                    />
+                    <label for="radio2"
+                      >Palabras que se anteponen a un grupo de letras y su
+                      significado no cambia</label
+                    >
+                  </div>
+                  <div class="exam-form-question-test__radio">
+                    <input
+                      type="radio"
+                      name="question1"
+                      value="3"
+                      id="radio3"
+                    />
+                    <label for="radio3"
+                      >Palabras que se anteponen a un grupo de letras</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <!--*** Fin pregunta tipo test ***-->
+
+              <!--*** Pregunta tipo test ***-->
+              <div class="exam-form-question-test">
+                <!--*** Modificar el texto siguiente para cambiar la pregunta. ***-->
+                <span>2. Elija la palabra que incluye un prefijo</span>
+                <!--*** Modificar las opciones dependiendo de la pregunta ***-->
+                <div class="exam-form-question-test__options">
+                  <!--*** Hay que tener en cuenta en las opciones cambiar: ***-->
+                  <!--*** name: todas las opciones tienen que tener el mismo name de la pregunta ***-->
+                  <!--*** value: valor de la opcion de la pregunta ***-->
+                  <!--*** id: único por opcion y linkearlo con el atributo 'for' del label ***-->
+                  <div class="exam-form-question-test__radio">
+                    <input
+                      type="radio"
+                      name="question2"
+                      value="4"
+                      id="radio4"
+                    />
+                    <label for="radio4">Anormal</label>
+                  </div>
+                  <div class="exam-form-question-test__radio">
+                    <input
+                      type="radio"
+                      name="question2"
+                      value="5"
+                      id="radio5"
+                    />
+                    <label for="radio5">Aereo</label>
+                  </div>
+                  <div class="exam-form-question-test__radio">
+                    <input
+                      type="radio"
+                      name="question2"
+                      value="6"
+                      id="radio6"
+                    />
+                    <label for="radio6">Escolar</label>
+                  </div>
+                </div>
+              </div>
+              <!--*** Fin pregunta tipo test ***-->
+
+              <!--*** Pregunta tipo múltiple ***-->
+              <div class="exam-form-question-multiple__content">
+                <!--*** Modificar el texto siguiente para cambiar la pregunta. ***-->
+                <span>3. Elija el sinónimo de embrión</span>
+                <!--*** Modificar las opciones dependiendo de la pregunta ***-->
+                <div class="exam-form-question-multiple__options">
+                  <!--*** Hay que tener en cuenta en las opciones cambiar: ***-->
+                  <!--*** name: todas las opciones tienen que tener el mismo name de la pregunta ***-->
+                  <!--*** id: único por opcion y linkearlo con el atributo for del label ***-->
+                  <div class="exam-form-question-multiple__checkbox">
+                    <input type="checkbox" name="ckbox1" id="checkbox1" />
+                    <label for="checkbox1">Feto</label>
+                  </div>
+                  <div class="exam-form-question-multiple__checkbox">
+                    <input type="checkbox" name="ckbox2" id="checkbox2" />
+                    <label for="checkbox2">Árbol</label>
+                  </div>
+                  <div class="exam-form-question-multiple__checkbox">
+                    <input type="checkbox" name="ckbox3" id="checkbox3" />
+                    <label for="checkbox3">Preñez</label>
+                  </div>
+                </div>
+              </div>
+              <!--*** Fin pregunta tipo múltiple ***-->
+              <!--*** Aqui puedes añadir más question de tipo múltiple o test. ***-->
+            </fieldset>
+          </div>
+          <!--*** Fin zona de preguntas ***-->
+          <!--BUTTON SEND-->
+          <div class="exam-form-button">
+            <input
+              class="exam-form-button__send"
+              type="submit"
+              value="Enviar"
+              target="__blank"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--*** Fin template ***-->
+  </body>
+</html>
